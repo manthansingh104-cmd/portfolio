@@ -1,10 +1,16 @@
 # 🚀 Manthan Singh — Frontend Developer Portfolio
 
-Personal developer portfolio built with **React.js**, **Tailwind CSS**, and **Framer Motion**. Features smooth animations, responsive dark UI, animated hero section, projects showcase, and a functional contact form via **EmailJS**. Built by Manthan Singh, first-year B.Tech CSE student. Deployed on Vercel. Open to frontend internship opportunities.
+Personal developer portfolio built with **React.js**, **Tailwind CSS**, and **Framer Motion**. Features smooth animations, responsive dark UI, animated hero section, projects showcase, and a functional contact form via **EmailJS**.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://your-portfolio.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-black?style=for-the-badge&logo=vercel)](https://portfolio-cj1k.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-manthansingh104--cmd-181717?style=for-the-badge&logo=github)](https://github.com/manthansingh104-cmd)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Manthan%20Singh-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/manthan-singh-3a7013373)
+
+---
+
+## 🌐 Live Demo
+
+**👉 [https://portfolio-cj1k.vercel.app/](https://portfolio-cj1k.vercel.app/)**
 
 ---
 
@@ -52,44 +58,51 @@ src/
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Try It Locally
+
+Want to run this project on your own machine? Follow these steps:
 
 ### Prerequisites
-- Node.js (v18 or higher)
-- npm or yarn
+- Node.js (v18 or higher) — [Download here](https://nodejs.org)
+- npm (comes with Node.js)
+- Git — [Download here](https://git-scm.com)
 
-### Installation
-
-1. **Clone the repository**
+### Step 1 — Clone the repository
 ```bash
 git clone https://github.com/manthansingh104-cmd/portfolio.git
 cd portfolio
 ```
 
-2. **Install dependencies**
+### Step 2 — Install dependencies
 ```bash
 npm install
 ```
 
-3. **Set up EmailJS** (for contact form)
+### Step 3 — Set up EmailJS (for contact form)
 
-   - Sign up at [emailjs.com](https://www.emailjs.com)
-   - Create a Gmail service and get your **Service ID**
-   - Create an email template with `{{from_name}}`, `{{from_email}}`, `{{message}}` variables and get your **Template ID**
-   - Get your **Public Key** from Account → API Keys
-   - Update `src/components/Contact.jsx`:
-   ```js
-   const EMAILJS_SERVICE_ID  = 'your_service_id'
-   const EMAILJS_TEMPLATE_ID = 'your_template_id'
-   const EMAILJS_PUBLIC_KEY  = 'your_public_key'
-   ```
+The contact form uses EmailJS to send emails. To make it work:
 
-4. **Run the development server**
+1. Sign up for free at [emailjs.com](https://www.emailjs.com)
+2. Create a **Gmail service** → copy the **Service ID**
+3. Create an **Email Template** with these variables:
+   - `{{from_name}}` — sender's name
+   - `{{from_email}}` — sender's email
+   - `{{message}}` — the message
+4. Copy the **Template ID**
+5. Go to **Account → API Keys** → copy the **Public Key**
+6. Open `src/components/Contact.jsx` and replace:
+```js
+const EMAILJS_SERVICE_ID  = 'your_service_id'
+const EMAILJS_TEMPLATE_ID = 'your_template_id'
+const EMAILJS_PUBLIC_KEY  = 'your_public_key'
+```
+
+### Step 4 — Run the development server
 ```bash
 npm run dev
 ```
 
-5. **Open in browser**
+### Step 5 — Open in browser
 ```
 http://localhost:5173
 ```
@@ -104,22 +117,20 @@ npm run build
 
 ---
 
-## 🌐 Deployment
-
-This project is deployed on **Vercel**. To deploy your own:
+## 🌐 Deploy Your Own
 
 1. Push your code to GitHub
 2. Go to [vercel.com](https://vercel.com) and sign in with GitHub
 3. Click **New Project** → select your repo
-4. Click **Deploy**
-
-Your site will be live in under a minute! ⚡
+4. Select **Vite** as the framework preset
+5. Click **Deploy** ⚡
 
 ---
 
 ## 📬 Contact
 
 **Manthan Singh**
+- 🌐 Portfolio: [portfolio-cj1k.vercel.app](https://portfolio-cj1k.vercel.app/)
 - 📧 Email: [manthansingh104@gmail.com](mailto:manthansingh104@gmail.com)
 - 💼 LinkedIn: [manthan-singh-3a7013373](https://www.linkedin.com/in/manthan-singh-3a7013373)
 - 🐙 GitHub: [manthansingh104-cmd](https://github.com/manthansingh104-cmd)
